@@ -1,0 +1,294 @@
+@font-face {
+  font-family: "montserratbold";
+  src: url("../fonts/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat-bold-webfont.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "devonshireregular";
+  src: url("../fonts/devonshire-regular-webfont.woff2") format("woff2"), url("../fonts/devonshire-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "itimregular";
+  src: url("../fonts/itim-regular-webfont.woff2") format("woff2"), url("../fonts/itim-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "croissant_oneregular";
+  src: url("../fonts/croissantone-regular-webfont.woff2") format("woff2"), url("../fonts/croissantone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "cantata_oneregular";
+  src: url("../fonts/cantataone-regular-webfont.woff2") format("woff2"), url("../fonts/cantataone-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "dancing_scriptregular";
+  src: url("../fonts/dancingscript-variablefont_wght-webfont.woff2") format("woff2"), url("../fonts/dancingscript-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kaushan_scriptregular";
+  src: url("../fonts/kaushanscript-regular-webfont.woff2") format("woff2"), url("../fonts/kaushanscript-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "kalamregular";
+  src: url("../fonts/kalam-regular-webfont.woff2") format("woff2"), url("../fonts/kalam-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "montserratregular";
+  src: url("../fonts/montserrat-regular-webfont.woff2") format("woff2"), url("../fonts/montserrat-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "comics";
+  src: url("../fonts/TYPO-COMICS-Light-DEMO.ttf.eot") format("eot"), url("../fonts/TYPO-COMICS-Light-DEMO.ttf.woff") format("woff"), url("../fonts/TYPO-COMICS-Light-DEMO.ttf.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: auto;
+  margin: auto;
+}
+
+.header {
+  width: auto;
+  height: 200px;
+  background: #579c87;
+  margin-bottom: 50px;
+}
+
+.header__logo {
+  color: #fdcb46;
+  font-size: 6rem;
+  text-align: center;
+  padding-top: 3rem;
+  font-family: "montserratbold";
+}
+
+.grid {
+  width: 1400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sous_grid {
+  display: flex;
+  justify-content: center;
+}
+
+.menu {
+  width: 500px;
+  height: 700px;
+  border: 2px solid black;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 50px;
+  margin-left: 50px;
+  cursor: pointer;
+  text-decoration: none;
+  background: #fcdfdb;
+}
+.menu--2 {
+  background: #fff5fe;
+}
+.menu--3 {
+  background: #f9f9f9;
+}
+.menu--4 {
+  background: #fdfffd;
+}
+.menu__heading {
+  color: #3d1319;
+  font-family: "devonshireregular";
+  font-size: 3rem;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 230px;
+  margin-bottom: 20px;
+}
+.menu__byline {
+  color: #3d1319;
+  text-transform: uppercase;
+  font-family: "itimregular";
+  text-align: center;
+  font-size: 4rem;
+}
+
+.menu--2__heading {
+  color: #c77412;
+  font-family: "croissant_oneregular";
+  font-size: 2.3rem;
+  margin-top: 250px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.menu--2__byline {
+  color: #c77412;
+  font-size: 4rem;
+  text-align: center;
+  font-family: "cantata_oneregular";
+  text-transform: capitalize;
+}
+
+.menu--3__heading {
+  color: #0887fb;
+  font-family: "dancing_scriptregular";
+  font-size: 3rem;
+  margin-top: 250px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.menu--3__byline {
+  color: #0887fb;
+  font-family: "kalamregular";
+  font-size: 4rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.menu--4__heading {
+  color: #72bf56;
+  font-family: "kaushan_scriptregular";
+  font-size: 3rem;
+  margin-top: 250px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: normal;
+}
+
+.menu--4__byline {
+  color: #72bf56;
+  font-family: "kalamregular";
+  font-size: 4rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.preview {
+  width: 600px;
+  height: 100px;
+  background: #579c87;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  color: #fdcb46;
+  display: flex;
+  justify-content: center;
+}
+.preview__link {
+  font-family: "montserratregular";
+  color: #fdcb46;
+  font-weight: bold;
+  font-size: 3.5rem;
+  line-height: 100px;
+  text-decoration: none;
+}
+
+.footer {
+  width: auto;
+  height: 150px;
+  margin-top: 50px;
+  background: #579c87;
+  display: flex;
+  justify-content: space-between;
+  font-family: "montserratregular";
+}
+.footer .mention__link {
+  color: #fdcb46;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 150px;
+  margin-left: 100px;
+}
+.footer .contact__link {
+  color: #fdcb46;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 3.2rem;
+  line-height: 150px;
+  margin-right: 100px;
+}
+
+.menu-1 {
+  width: 1000px;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "comics";
+  color: #3d1319;
+  background: #fcdfdb;
+}
+
+.menu-1__titre {
+  color: #3d1319;
+  font-family: "devonshireregular";
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.menu__entree {
+  width: auto;
+  border: 1px solid red;
+  font-size: 1.5rem;
+}
+
+.sous_menu {
+  display: flex;
+}
+
+.menu__intitule {
+  width: 800px;
+  border: 1px solid green;
+}
+.menu__intitule p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.menu__prix p {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.menu__principal {
+  width: auto;
+  font-size: 1.5rem;
+}
+
+.menu__dessert {
+  width: auto;
+  font-size: 1.5rem;
+}
+
+.menu__titre {
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=style.css.map */

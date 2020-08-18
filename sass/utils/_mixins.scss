@@ -1,0 +1,39 @@
+@mixin heading 
+{
+    margin-top: 250px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: normal;
+}
+
+@mixin byline 
+{
+    font-size: 4rem;
+    text-align: center;
+}
+
+@mixin color-typo-menu ($color)
+{
+    color: $color;
+}
+
+@mixin menu-background ($map)
+{
+    @each $menu, $val in $map
+    {
+        &--#{$menu}
+        {
+            background: $val;
+            
+        }
+    }
+}
+
+@mixin footer-liens
+{
+    color: $color-secondary;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 3.2rem;
+    line-height: 150px;
+}

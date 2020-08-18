@@ -1,0 +1,247 @@
+@import "./base/polices";
+@import "./utils/variables";
+@import "./utils/mixins";
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.content
+{
+    width: auto;
+    margin: auto;
+}
+
+.header
+{
+    width: auto;
+    height: 200px;
+    background: $color-primary;
+    margin-bottom: 50px;
+
+}
+
+.header__logo{
+    color: $color-secondary;
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 3rem;
+    font-family: $typo-logo;
+}    
+
+
+.grid
+{
+    width: 1400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sous_grid
+{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.menu
+{
+    width: 500px;
+    height: 700px;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    background: $background-menu1;
+    @include menu-background ($menu-background);
+    &__heading
+    {
+        color: $color-menu1;
+        font-family: $typo-menu1;
+        font-size: 3rem;
+        font-weight: normal;
+        text-align: center;
+        margin-top: 230px;
+        margin-bottom: 20px;
+        
+    }    
+    &__byline
+    {
+        color: $color-menu1;
+        text-transform: uppercase;
+        font-family: $typo-titre-menu1;
+        text-align: center;
+        font-size: 4rem;
+    }
+}
+
+.menu--2__heading
+{
+    color: $color-menu2;
+    font-family: $typo-menu2;
+    font-size: 2.3rem;
+    @include heading; 
+}
+.menu--2__byline
+{
+    color: $color-menu2;
+    @include byline;
+    font-family: $typo-titre-menu2;
+    text-transform: capitalize;
+}
+
+.menu--3__heading
+{
+    color: $color-menu3;
+    font-family: $typo-menu3;
+    font-size: 3rem;
+    @include heading; 
+}
+.menu--3__byline
+{
+    color: $color-menu3;
+    font-family: $typo-titre-menu3;
+    @include byline;
+    text-transform: capitalize;
+}
+
+.menu--4__heading
+{
+    color: $color-menu4;
+    font-family: $typo-menu4;
+    font-size: 3rem;
+    @include heading; 
+}
+.menu--4__byline
+{
+    color: $color-menu4;
+    font-family: $typo-titre-menu3;
+    @include byline;
+    text-transform: capitalize;
+}
+
+.preview
+{
+    width: 600px;
+    height: 100px;
+    background: $color-primary;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 20px;
+    color: $color-secondary;
+    display: flex;
+    justify-content: center;
+    &__link
+    {
+        font-family: $typo-site;
+        color: $color-secondary;
+        font-weight: bold;
+        font-size: 3.5rem;
+        line-height: 100px;
+        text-decoration: none;
+    }
+}
+
+
+.footer
+{
+    width: auto;
+    height: 150px;
+    margin-top: 50px;
+    background: $color-primary;
+    display: flex;
+    justify-content: space-between;
+    font-family: $typo-site;
+    .mention__link
+    {
+         @include footer-liens;
+         margin-left: 100px;
+    }
+    .contact__link
+    {
+        @include footer-liens;
+        margin-right: 100px;
+    }
+}
+
+.menu-1
+{
+    width: 1000px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $typo-menu;
+    color: $color-menu1;
+    background: $background-menu1;
+}
+.menu-1__titre
+{
+    color: $color-menu1;
+    font-family: $typo-menu1;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+
+.menu__entree
+{
+    width: auto;
+    border:1px solid red;
+    font-size: 1.5rem;
+    
+}
+.sous_menu
+{
+    display: flex;
+}
+
+.menu__intitule
+{
+    width: 800px;
+    border:1px solid green;
+    p 
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.menu__prix
+{
+   
+    p 
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+.menu__principal
+{
+    width: auto;
+    font-size: 1.5rem;
+    
+}
+
+.menu__dessert
+{
+    width: auto;
+    font-size: 1.5rem;
+    
+}
+
+.menu__titre
+{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
