@@ -1,10 +1,14 @@
 @import "./base/polices";
 @import "./utils/variables";
 @import "./utils/mixins";
+@import"./layout/header";
+@import "./layout/footer";
 
 
 
-* {
+
+* 
+{
     margin: 0;
     padding: 0;
 }
@@ -15,22 +19,6 @@
     margin: auto;
 }
 
-.header
-{
-    width: auto;
-    height: 200px;
-    background: $color-primary;
-    margin-bottom: 50px;
-
-}
-
-.header__logo{
-    color: $color-secondary;
-    font-size: 6rem;
-    text-align: center;
-    padding-top: 3rem;
-    font-family: $typo-logo;
-}    
 
 
 .grid
@@ -53,25 +41,34 @@
 {
     width: 500px;
     height: 700px;
-    border: 2px solid black;
     margin-top: 50px;
     margin-bottom: 50px;
     margin-right: 50px;
     margin-left: 50px;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration: none; 
     background: $background-menu1;
     @include menu-background ($menu-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 1rem rgb(235, 235, 235), 0 0 1rem rgb(206, 206, 206);
+    
     &__heading
     {
         color: $color-menu1;
         font-family: $typo-menu1;
-        font-size: 3rem;
+        font-size: 3.7rem;
         font-weight: normal;
         text-align: center;
         margin-top: 230px;
-        margin-bottom: 20px;
-        
+        margin-bottom: 20px; 
+        //transform: scale(1);
+        //transition: transform 700ms;
+        //&:hover
+        //{
+        //transform: scale(1.15);
+        //}
     }    
     &__byline
     {
@@ -83,9 +80,50 @@
     }
 }
 
+
+
+.menu-zoom
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.7s;
+    &:hover
+    {
+        transform: scale(1.08);
+        opacity: .7;
+    }
+}
+
+
+
+
+.logo
+{
+    position: absolute;
+    margin-top: 130px;
+    font-size: 5.5rem;
+}
+
+.carte-logo1
+{
+    position: absolute;
+    margin-top: 110px;
+    font-size: 5rem;
+}
+
+.fas
+{   
+    background: -webkit-linear-gradient(-30deg, #f05060 35% 50%, #f6916a 60% 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .menu--2__heading
 {
-    color: $color-menu2;
+    @include titre-menu-2_degrade;
     font-family: $typo-menu2;
     font-size: 2.3rem;
     @include heading; 
@@ -100,9 +138,10 @@
 
 .menu--3__heading
 {
-    color: $color-menu3;
+    @include titre-menu-3_degrade;
     font-family: $typo-menu3;
     font-size: 3rem;
+    padding: 1rem;
     @include heading; 
 }
 .menu--3__byline
@@ -115,7 +154,7 @@
 
 .menu--4__heading
 {
-    color: $color-menu4;
+    @include titre-menu-4_degrade;
     font-family: $typo-menu4;
     font-size: 3rem;
     @include heading; 
@@ -147,101 +186,265 @@
         font-size: 3.5rem;
         line-height: 100px;
         text-decoration: none;
+        
     }
 }
 
 
-.footer
+
+
+.grid.carte
 {
     width: auto;
-    height: 150px;
-    margin-top: 50px;
-    background: $color-primary;
-    display: flex;
-    justify-content: space-between;
-    font-family: $typo-site;
-    .mention__link
-    {
-         @include footer-liens;
-         margin-left: 100px;
-    }
-    .contact__link
-    {
-        @include footer-liens;
-        margin-right: 100px;
-    }
 }
 
 .menu-1
 {
-    width: 1000px;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include parametre-menu;
     font-family: $typo-menu;
     color: $color-menu1;
     background: $background-menu1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    &__titre
+        {
+        color: $color-menu1;
+        font-family: $typo-menu1;
+        font-size: 3.7rem;
+        font-weight: normal;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
 }
-.menu-1__titre
+
+.carte-menu
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__sous-titre
+    {
+    font-size: 1.5rem;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    &-me1
+     {
+        padding: 0.5rem;
+        text-decoration: none;
+        background: linear-gradient(to top, $color-menu1 0%, $color-menu1 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+
+        transition: background-size .7s;
+        &:hover
+        {
+            background-size: 100% 100%;
+        }
+     }
+    }
+    &__entree
+    {
+    width: auto;
+    }
+    &__principal
+    {
+    width: auto;
+    }
+    &__dessert
+    {
+    width: auto;
+    margin-bottom: 150px;
+    }
+}
+
+
+
+.bloc-sous-titre-1
+{
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 100px;
+    margin-bottom: 20px;
+
+}
+
+.bloc-sous-titre
+{
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.menu-trait
+{
+    width: 260px;
+    height: 10px;
+    //margin-top: 110px;
+    //margin-right: 50px;
+}
+
+
+.menu3-trait
+{
+    width: 280px;
+}
+
+.menu4-trait
+{
+    width: 320px;
+}
+
+.carte-menu__intitule
+{
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.carte-menu__plat
+{   
+    width: 700px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: 0;
+}
+
+.carte-menu__prix
+{
+    width: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 0;
+}
+
+.logo-fin
+{
+    font-size: 3rem;
+    border: 2p solid black;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-1__titrebis
 {
     color: $color-menu1;
     font-family: $typo-menu1;
+    font-size: 2.7rem;
+    margin-bottom: 100px;
+}
+
+.menu-2
+{
+    @include parametre-menu;
+    font-family: $typo-titre-menu2;
+    background: $background-menu2;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+}
+
+.menu-2__titre
+{
+    font-size: 72px;
+    @include titre-menu-2_degrade;
+    font-family: $typo-menu2;
     font-size: 3rem;
     font-weight: normal;
-}
-
-
-.menu__entree
-{
-    width: auto;
-    border:1px solid red;
-    font-size: 1.5rem;
+    margin-top: 150px;
     
 }
-.sous_menu
+.clip-g 
+{
+    @include clip-g;
+    background: #c77412;
+    &--2
+    {
+        background: #a56799;
+        @include clip-g;
+    }
+    &--3
+    {
+        @include clip-g;
+        background: #6e4ccc;
+    }
+}
+
+.clip-d 
+{
+    @include clip-d;
+    background: #c77412;
+    &--2
+    {
+        background: #a56799;
+        @include clip-d;
+    }
+    &--3
+    {
+        @include clip-d;
+        background: #6e4ccc;
+    }
+}
+
+
+.carte-menu--2
 {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: -webkit-linear-gradient(top, $color-menu2 0 30%, #a56799 40% 65%, #6e4ccc 60% 100% );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.menu__intitule
+
+
+
+.menu-3
 {
-    width: 800px;
-    border:1px solid green;
-    p 
-    {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+    @include parametre-menu;
+    font-family: $typo-menu;
+    background: $background-menu3;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 1.3rem;
 }
 
-.menu__prix
+.menu-3__titre
 {
-   
-    p 
-    {
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
+    @include titre-menu-3_degrade;
+    font-family: $typo-menu3;
+    font-size: 3.1rem;
+    padding: 0.5rem;
+    font-weight: normal;
+    margin-top: 100px;
 }
 
-.menu__principal
+.menu-4
 {
-    width: auto;
-    font-size: 1.5rem;
+    @include parametre-menu;
+    font-family: $typo-menu;
+    background: $background-menu4;
+    margin-top: 0;
+    margin-bottom: 50px;
+    font-size: 1.3rem;
+}
+
+.menu-4__titre
+{
+    @include titre-menu-4_degrade;
+    font-family: $typo-menu4;
+    font-size: 3rem;
+    font-weight: normal;
+    margin-top: 100px;
     
 }
-
-.menu__dessert
-{
-    width: auto;
-    font-size: 1.5rem;
-    
-}
-
-.menu__titre
-{
-    margin-top: 50px;
-    margin-bottom: 20px;
-}
-

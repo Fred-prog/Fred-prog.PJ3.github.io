@@ -1,0 +1,15 @@
+.header
+{
+    width: auto;
+    height: 200px;
+    background: $color-primary;
+    margin-bottom: 50px;
+    &__logo
+    {
+    color: $color-secondary;
+    font-size: 6rem;
+    text-align: center;
+    padding-top: 3rem;
+    font-family: 'montserratbold';
+    }
+}
