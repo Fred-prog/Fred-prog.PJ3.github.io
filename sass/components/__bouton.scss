@@ -1,0 +1,86 @@
+.preview
+{
+    width: 800px;
+    height: 100px;
+    background: $color-primary;
+    margin-top: 50px;
+    margin-bottom: 200px;
+    border-radius: 20px;
+    color: $color-secondary;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    @media (max-width: 800px)
+    {
+        width: auto;
+        height: auto;
+    }
+    &__link
+    {
+        font-family: $typo-site;
+        color: $color-secondary;
+        font-weight: bold;
+        font-size: 3.5rem;
+        line-height: 100px;
+        text-decoration: none;
+        @media (max-width: 602px)
+        {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+.load
+    {
+        width: 150px;
+        height: 70px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        @media (max-width: 800px)
+        {
+            font-size: 1.5rem;
+            width: 100px;
+            height: auto;
+        }
+        
+        
+        &__point
+        {
+            background-color: $color-secondary;
+            width: 20px;
+            height: 20px;
+            border-radius: 100px;
+            opacity: 0;
+            animation: point 1800ms 1000ms ease-in-out infinite both;
+            @for $i from 1 through 3
+            {
+                &--#{$i}
+                {
+                    animation-delay: 200ms * $i;
+                }
+            }
+            @media (max-width: 800px)
+            {
+                width: 10px;
+                height: 10px;
+            }
+        }
+
+    }
+
+@keyframes point 
+{
+    0%{opacity: .0;}
+
+    30%{opacity: .5;}
+
+    50%{opacity: 1;}
+
+    80%{opacity: 1
+        animation-delay 10s;}
+
+    100%{opacity: 1
+        animation-delay 10s;}
+
+}

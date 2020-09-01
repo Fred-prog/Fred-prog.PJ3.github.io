@@ -1,0 +1,75 @@
+.menu-1
+{
+    @include parametre-menu;
+    font-family: $typo-menu;
+    color: $color-menu1;
+    background: $background-menu1;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+
+    @media (max-width: 1010px)
+    {
+        margin-top: 0;
+
+    }
+
+    &__titre
+        {
+        color: $color-menu1;
+        font-family: $typo-menu1;
+        font-size: 3.7rem;
+        font-weight: normal;
+        margin-top: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+}
+
+.carte-logo1
+{
+    position: absolute;
+    margin-top: 110px;
+    font-size: 5rem;
+}
+
+.fas
+{   
+    background: -webkit-linear-gradient(-30deg, #f05060 35% 50%, #f6916a 60% 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.bloc-sous-titre-1
+{
+    width: 750px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-top: 100px;
+    margin-bottom: 20px;
+    @media (max-width: 1010px)
+    {
+        width: auto;
+    }
+
+}
+
+.menu-1__titrebis
+{
+    color: $color-menu1;
+    font-family: $typo-menu1;
+    font-size: 2.7rem;
+    margin-bottom: 100px;
+}
+
+.logo-fin
+{
+    font-size: 3rem;
+    border: 2p solid black;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+}
