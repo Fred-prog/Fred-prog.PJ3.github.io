@@ -19,9 +19,7 @@
     {
     color: $color-secondary;
     font-size: 6rem;
-    //text-align: center;
-    //padding-top: 3rem;
-    font-family: 'montserratbold';
+    font-family: $typo-logo;
     @media (max-width: 1200px)
     {
         padding: 1rem;

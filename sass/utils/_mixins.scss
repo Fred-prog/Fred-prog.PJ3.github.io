@@ -127,18 +127,6 @@
 }
 
 
-@mixin color-clip ($map)
-{
-    @each $clip, $val in $map
-    {
-        &clip-g--#{$clip}
-        {
-            background: $val;
-            
-        }
-    }
-}
-
 @mixin animation-underline ($color)
 {
     padding: 0.5rem;
