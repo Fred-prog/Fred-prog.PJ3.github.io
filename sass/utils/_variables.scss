@@ -2,13 +2,13 @@ $color-primary: #579c87;
 $color-secondary: #fdcb46;
 
 $typo-logo: "montserratbold";
-$typo-site: 'montserratregular';
-$typo-menu: 'comics';
+$typo-site: "montserratregular";
+$typo-menu: "comics";
 
 $color-menu1: #3d1319;
 $color-menu2: #c77412;
 $color-menu3: #0887fb;
-$color-menu4: #45993e; 
+$color-menu4: #45993e;
 
 $background-menu1: #fcdfdb;
 $background-menu2: #fff5fe;
@@ -16,25 +16,23 @@ $background-menu3: #f9f9f9;
 $background-menu4: #fdfffd;
 
 $menu-background: (
-    2: $background-menu2,
-    3: $background-menu3,
-    4: $background-menu4
+  2: $background-menu2,
+  3: $background-menu3,
+  4: $background-menu4,
 );
 
-$typo-titre-menu1: 'itimregular';
-$typo-titre-menu2: 'cantata_oneregular';
-$typo-titre-menu3: 'kalamregular';
-$typo-titre-menu4:'#';
+$typo-titre-menu1: "itimregular";
+$typo-titre-menu2: "cantata_oneregular";
+$typo-titre-menu3: "kalamregular";
+$typo-titre-menu4: "#";
 
-$typo-menu1:'devonshireregular';
-$typo-menu2:'croissant_oneregular';
-$typo-menu3:'dancing_scriptregular';
-$typo-menu4:'kaushan_scriptregular';
+$typo-menu1: "devonshireregular";
+$typo-menu2: "croissant_oneregular";
+$typo-menu3: "dancing_scriptregular";
+$typo-menu4: "kaushan_scriptregular";
 
 $clip: (
-    1: $color-menu2,
-    2: #a56799,
-    3: #6e4ccc);
-
-
-$skake-intensity: 3%;
+  1: $color-menu2,
+  2: #a56799,
+  3: #6e4ccc,
+);

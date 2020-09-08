@@ -11,8 +11,22 @@
 @import "./layout/footer";
 @import "./components/_bouton";
 
-.grid.carte {
+.grid-carte {
   width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-carte__titre-menu {
+  font-family: $typo-logo;
+  font-size: 3rem;
+  padding: 1rem;
+  @media (max-width: 591px) {
+    font-size: 2.4rem;
+  }
+  @media (max-width: 479px) {
+    font-size: 1.5rem;
+  }
 }
 
 .carte-menu {
