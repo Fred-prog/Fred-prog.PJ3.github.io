@@ -1,56 +1,55 @@
-.menu-2
-{
-    @include parametre-menu;
-    font-family: $typo-titre-menu2;
-    background: $background-menu2;
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-size: 1.3rem;
-    @media (max-width: 500px)
-        {
-            font-size:1rem;
-
-        }
+.menu-2 {
+  @include parametre-menu;
+  font-family: $typo-titre-menu2;
+  background: $background-menu2;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+  @media (max-width: 500px) {
+    font-size: 1rem;
+  }
 }
 
-.menu-2__titre
-{
-    @include titre-menu-2_degrade;
-    font-family: $typo-menu2;
-    font-size: 3rem;
-    font-weight: normal;
-    margin-top: 150px;
-    @media (max-width: 565px)
-        {
-            font-size:1.8rem;
-        }
-    
+.menu-2__titre {
+  @include titre-menu-2_degrade;
+  font-family: $typo-menu2;
+  font-size: 3rem;
+  font-weight: normal;
+  margin-top: 150px;
+  @media (max-width: 565px) {
+    font-size: 1.8rem;
+  }
+  @media (max-width: 347px) {
+    font-size: 1.6rem;
+  }
 }
-.clip
-{
+
+.clip {
+  @include clip-g;
+  background: #c77412;
+  &--2 {
+    background: #a56799;
     @include clip-g;
-    background: #c77412;
-    &--2
-    {
-        background: #a56799;
-        @include clip-g;
-    }
-    &--3
-    {
-        @include clip-g;
-        background: #6e4ccc;
-    }
+  }
+  &--3 {
+    @include clip-g;
+    background: #6e4ccc;
+  }
 }
 
-
-.carte-menu--2
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    background: -webkit-linear-gradient(top, $color-menu2 0 30%, #a56799 40% 68%, #6e4ccc 60% 100% );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.carte-menu--2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background: -webkit-linear-gradient(
+    top,
+    $color-menu2 0 30%,
+    #a56799 40% 67%,
+    #6e4ccc 60% 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
 }
-

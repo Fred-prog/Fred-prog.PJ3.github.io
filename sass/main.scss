@@ -11,169 +11,144 @@
 @import "./layout/footer";
 @import "./components/_bouton";
 
-.grid.carte
-{
-    width: auto;
+.grid.carte {
+  width: auto;
 }
 
-
-.carte-menu
-{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 50px;
-    &__sous-titre
-    {
+.carte-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  &__sous-titre {
     font-size: 1.5rem;
     margin-top: 50px;
     margin-bottom: 20px;
     @include animation-underline(black);
-    @media (max-width: 1000px)
-        {
-            text-align: center;
-        }
-    @media (max-width: 477px)
-        {
-            font-size: 1.2rem;
-        }
+    @media (max-width: 1000px) {
+      text-align: center;
     }
-    &__entree
-    {
+    @media (max-width: 477px) {
+      font-size: 1.2rem;
+    }
+    @media (max-width: 347px) {
+      font-size: 1.2rem;
+    }
+  }
+  &__entree {
     width: auto;
-    }
-    &__principal
-    {
+  }
+  &__principal {
     width: auto;
-    }
-    &__dessert
-    {
+  }
+  &__dessert {
     width: auto;
     margin-bottom: 150px;
-    }
+  }
 }
 
-
-.bloc-sous-titre
-{
-    width: 900px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    @media (max-width: 1000px)
-    {
-        width: auto;
-    }
-
-}
-
-
-.carte-menu__intitule
-{
+.bloc-sous-titre {
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  @media (max-width: 1000px) {
     width: auto;
-    display: flex;
-    justify-content: space-between;
-    @media (max-width: 1000px)
-    {
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-    }
+  }
 }
 
-.carte-menu__plat
-{   
-    width: 700px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-left: 0;
-    @media (max-width: 1000px)
-    {
-        width: auto;
-        text-align: center;
-    }
+.carte-menu__intitule {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 0.5rem;
+  }
 }
 
-.carte-menu__prix
-{
-    width: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 0;
+.carte-menu__plat {
+  width: 700px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 0;
+  @media (max-width: 1000px) {
+    width: auto;
+    text-align: center;
+  }
 }
 
-.mirror
-{
-    transform: scaleX(-1);
+.carte-menu__prix {
+  width: 50px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 0;
 }
 
-.sprite 
-{
-    background-image: url(../img/download.png);
-    background-repeat: no-repeat;
-    display: block;
+.mirror {
+  transform: scaleX(-1);
 }
 
-.sprite-m1-tA 
-{
-    width: 260px;
-    height: 10px;
-    background-position: -5px -5px;
-    @media (max-width: 726px)
-    {
-        width: 100px;
-    }
-    
+.sprite {
+  background-image: url(../img/download.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.sprite-m1-tA {
+  width: 260px;
+  height: 10px;
+  background-position: -5px -5px;
+  @media (max-width: 726px) {
+    width: 100px;
+  }
 }
 
 .sprite-m1-tB {
-    width: 260px;
-    height: 10px;
-    background-position: -5px -25px;
-    @media (max-width: 726px)
-    {
-        width: 100px;
-    }
+  width: 260px;
+  height: 10px;
+  background-position: -5px -25px;
+  @media (max-width: 726px) {
+    width: 100px;
+  }
 }
 
 .sprite-m3-tA {
-    width: 300px;
-    height: 14px;
-    background-position: -5px -45px;
-    @media (max-width: 726px)
-    {
-        width: 100px;
-    }
+  width: 300px;
+  height: 14px;
+  background-position: -5px -45px;
+  @media (max-width: 726px) {
+    width: 100px;
+  }
 }
 
 .sprite-m3-tC {
-    width: 300px;
-    height: 15px;
-    background-position: -5px -69px;
-    @media (max-width: 726px)
-    {
-        width: 100px;
-    }
+  width: 300px;
+  height: 15px;
+  background-position: -5px -69px;
+  @media (max-width: 726px) {
+    width: 100px;
+  }
 }
 
 .sprite-m3-tE {
-    width: 300px;
-    height: 16px;
-    background-position: -5px -94px;
-    @media (max-width: 726px)
-    {
-        width: 100px;
-    }
+  width: 300px;
+  height: 16px;
+  background-position: -5px -94px;
+  @media (max-width: 726px) {
+    width: 100px;
+  }
 }
 
 .sprite-m4-tA {
-    width: 300px;
-    height: 15px;
-    background-position: -5px -120px;
-    @media (max-width: 702px)
-    {
-        width: 120px;
-    }
+  width: 300px;
+  height: 15px;
+  background-position: -5px -120px;
+  @media (max-width: 702px) {
+    width: 120px;
+  }
 }

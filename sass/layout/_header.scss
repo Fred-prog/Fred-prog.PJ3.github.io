@@ -1,32 +1,30 @@
-.header
-{
-    width: auto;
-    padding: 2rem;
-    background: $color-primary;
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    @media (max-width: 1005px)
-    {
-        margin-bottom: 0;
-    }
-    @media (max-width: 800px)
-    {
-        padding: 0;
-    }
-    &__logo
-    {
+.header {
+  width: auto;
+  padding: 2rem;
+  background: $color-primary;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 1005px) {
+    margin-bottom: 0;
+  }
+  @media (max-width: 800px) {
+    padding: 0;
+  }
+  &__logo {
     color: $color-secondary;
     font-size: 6rem;
     font-family: $typo-logo;
-    @media (max-width: 1200px)
-    {
-        padding: 1rem;
+    @media (max-width: 1200px) {
+      padding: 1rem;
     }
-    @media (max-width: 800px)
-    {
-        font-size: 4rem;
+    @media (max-width: 800px) {
+      font-size: 4rem;
+      padding: 0.5rem;
     }
+    @media (max-width: 374px) {
+      font-size: 3rem;
     }
+  }
 }

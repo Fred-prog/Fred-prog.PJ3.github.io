@@ -1,19 +1,19 @@
-.menu-4
-{
-    @include parametre-menu;
-    font-family: $typo-menu;
-    background: $background-menu4;
-    margin-top: 0;
-    margin-bottom: 50px;
-    font-size: 1.3rem;
+.menu-4 {
+  @include parametre-menu;
+  font-family: $typo-menu;
+  background: $background-menu4;
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-size: 1.3rem;
 }
 
-.menu-4__titre
-{
-    @include titre-menu-4_degrade;
-    font-family: $typo-menu4;
-    font-size: 3rem;
-    font-weight: normal;
-    margin-top: 150px;
-    
+.menu-4__titre {
+  @include titre-menu-4_degrade;
+  font-family: $typo-menu4;
+  font-size: 3rem;
+  font-weight: normal;
+  margin-top: 150px;
+  @media (max-width: 352px) {
+    font-size: 2.7rem;
+  }
 }
